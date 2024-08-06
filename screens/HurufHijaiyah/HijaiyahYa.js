@@ -1,19 +1,16 @@
 import { useNavigation } from "@react-navigation/native";
 import { useState } from "react";
 import {Text, View, StyleSheet, ImageBackground, TextInput, Pressable, TouchableOpacity, Alert, Image, Button} from "react-native";
-import Home from "./Home";
-import Hijaiyah from "./Hijaiyah";
-import HijaiyahTa from "./HurufHijaiyah/HijaiyahTa";
+import Home from "../Home";
+import Hijaiyah from "../Hijaiyah";
 
-export default function HijaiyahBa() {
+export default function HijaiyahYa() {
     const navigation=useNavigation();
 
     function KlikBack(){
-        navigation.navigate('Hijaiyah');
+        navigation.navigate('HijaiyahHamzah');
     }
-    function KlikNext(){
-        navigation.navigate('HijaiyahTa',{HijaiyahTa});
-    }
+
 
     return(
         <View style={{ backgroundColor: "#F9D689", flex: 1 }}>
@@ -22,29 +19,27 @@ export default function HijaiyahBa() {
                             <Text>Kembali</Text>
                          </TouchableOpacity>
                   
-                    <TouchableOpacity onPress={KlikNext} style={styles.buttton}>
-                        <Text> Selanjutnya</Text>
-                    </TouchableOpacity>
+        
                 </View>
         <View styles= {styles.container}>
            
             <Image 
-                source={require('../assets/Akhi.png')} style={styles.imageatas}/>
+                source={require('../../assets/Akhi.png')} style={styles.imageatas}/>
             <View style={styles.rectangle} >
                 <Text style={{
                     fontSize: 90,
                     textAlign:"center"
                 }}> 
-                ب
+                ي
                 </Text>
                 <Text style={{
                     fontSize: 30,
                     textAlign:"center"}}>
-                    Ba
+                    Ya’
                 </Text>
             </View>
             
-            <Image source={require('../assets/Ukhti.png')}style={styles.imagebawah}/>
+            <Image source={require('../../assets/Ukhti.png')}style={styles.imagebawah}/>
             <TouchableOpacity onPress={() => navigation.navigate(Home)} 
             style={styles.homeButton}> 
                 <Text> Home</Text>

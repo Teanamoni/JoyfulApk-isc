@@ -1,18 +1,19 @@
 import { useNavigation } from "@react-navigation/native";
 import { useState } from "react";
 import {Text, View, StyleSheet, ImageBackground, TextInput, Pressable, TouchableOpacity, Alert, Image, Button} from "react-native";
-import Home from "./Home";
-import Hijaiyah from "./Hijaiyah";
-import HijaiyahTa from "./HurufHijaiyah/HijaiyahTa";
+import Home from "../Home";
+import Hijaiyah from "../Hijaiyah";
+import HijaiyahRa from "./HijaiyahRa";
 
-export default function HijaiyahBa() {
+
+export default function HijaiyahDzal() {
     const navigation=useNavigation();
 
     function KlikBack(){
-        navigation.navigate('Hijaiyah');
+        navigation.navigate('HijaiyahDal');
     }
     function KlikNext(){
-        navigation.navigate('HijaiyahTa',{HijaiyahTa});
+        navigation.navigate('HijaiyahRa',{HijaiyahRa});
     }
 
     return(
@@ -29,22 +30,22 @@ export default function HijaiyahBa() {
         <View styles= {styles.container}>
            
             <Image 
-                source={require('../assets/Akhi.png')} style={styles.imageatas}/>
+                source={require('../../assets/Akhi.png')} style={styles.imageatas}/>
             <View style={styles.rectangle} >
                 <Text style={{
                     fontSize: 90,
                     textAlign:"center"
                 }}> 
-                ب
+                ذ
                 </Text>
                 <Text style={{
                     fontSize: 30,
                     textAlign:"center"}}>
-                    Ba
+                    Dzal
                 </Text>
             </View>
             
-            <Image source={require('../assets/Ukhti.png')}style={styles.imagebawah}/>
+            <Image source={require('../../assets/Ukhti.png')}style={styles.imagebawah}/>
             <TouchableOpacity onPress={() => navigation.navigate(Home)} 
             style={styles.homeButton}> 
                 <Text> Home</Text>

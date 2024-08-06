@@ -32,6 +32,34 @@ import Angka7 from './screens/AngkaAngka/Angka7';
 import Angka8 from './screens/AngkaAngka/Angka8';
 import Angka9 from './screens/AngkaAngka/Angka9';
 import Angka10 from './screens/AngkaAngka/Angka10';
+import HijaiyahTsa from './screens/HurufHijaiyah/HijaiyahTsa';
+import HijaiyahTa from './screens/HurufHijaiyah/HijaiyahTa';
+import HijaiyahJim from './screens/HurufHijaiyah/HijaiyahJim';
+import HijaiyahHa from './screens/HurufHijaiyah/HiijaiyahHa';
+import HijaiyahKha from './screens/HurufHijaiyah/HijaiyahKha';
+import HijaiyahDal from './screens/HurufHijaiyah/HijaiyahDal';
+import HijaiyahDzal from './screens/HurufHijaiyah/HijaiyahDzal';
+import HijaiyahRa from './screens/HurufHijaiyah/HijaiyahRa';
+import HijaiyahZa from './screens/HurufHijaiyah/HijaiyahZa';
+import HijaiyahSin from './screens/HurufHijaiyah/HijaiyahSin';
+import HijaiyahSyin from './screens/HurufHijaiyah/HijaiyahSyin';
+import HijaiyahShad from './screens/HurufHijaiyah/HijaiyahShad';
+import HijaiyahDhad from './screens/HurufHijaiyah/HijaiyahDhad';
+import HijaiyahTha from './screens/HurufHijaiyah/HijaiyahTha';
+import HijaiyahZha from './screens/HurufHijaiyah/HijaiyahZha';
+import HijaiyahAin from './screens/HurufHijaiyah/HijaiyahAin';
+import HijaiyahGhain from './screens/HurufHijaiyah/HijaiyahGhain';
+import HijaiyahFa from './screens/HurufHijaiyah/HijaiyahFa';
+import HijaiyahQaf from './screens/HurufHijaiyah/HijaiyahQaf';
+import HijaiyahKaf from './screens/HurufHijaiyah/HijaiyahKaf';
+import HijaiyahLam from './screens/HurufHijaiyah/HijaiyahLam';
+import HijaiyahMim from './screens/HurufHijaiyah/HIjaiyahMim';
+import HijaiyahNun from './screens/HurufHijaiyah/HijaiyahNun';
+import HijaiyahWaw from './screens/HurufHijaiyah/HijaiyahWaw';
+import HijaiyahHak from './screens/HurufHijaiyah/HijaiyahHak';
+import HijaiyahHamzah from './screens/HurufHijaiyah/HijaiyahHamzah';
+import HijaiyahLamAlif from './screens/HurufHijaiyah/HijaiyahLamAlif';
+import HijaiyahYa from './screens/HurufHijaiyah/HijaiyahYa';
 
 const Stack = createNativeStackNavigator();
 
@@ -76,6 +104,147 @@ export default function App() {
           component={HijaiyahBa}
           options={{headerShown:false}}
           ></Stack.Screen>
+       <Stack.Screen
+          name='HijaiyahTsa'
+          component={HijaiyahTsa}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahTa'
+          component={HijaiyahTa}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahJim'
+          component={HijaiyahJim}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahHa'
+          component={HijaiyahHa}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahKha'
+          component={HijaiyahKha}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahDal'
+          component={HijaiyahDal}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+         <Stack.Screen
+          name='HijaiyahDzal'
+          component={HijaiyahDzal}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahRa'
+          component={HijaiyahRa}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahZa'
+          component={HijaiyahZa}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahSin'
+          component={HijaiyahSin}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahSyin'
+          component={HijaiyahSyin}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahShad'
+          component={HijaiyahShad}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahDhad'
+          component={HijaiyahDhad}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahTha'
+          component={HijaiyahTha}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahZha'
+          component={HijaiyahZha}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahAin'
+          component={HijaiyahAin}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahGhain'
+          component={HijaiyahGhain}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahFa'
+          component={HijaiyahFa}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahQaf'
+          component={HijaiyahQaf}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+         <Stack.Screen
+          name='HijaiyahKaf'
+          component={HijaiyahKaf}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahLam'
+          component={HijaiyahLam}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahMim'
+          component={HijaiyahMim}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahNun'
+          component={HijaiyahNun}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahWaw'
+          component={HijaiyahWaw}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahHak'
+          component={HijaiyahHak}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahHamzah'
+          component={HijaiyahHamzah}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahLamAlif'
+          component={HijaiyahLamAlif}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+        <Stack.Screen
+          name='HijaiyahYa'
+          component={HijaiyahYa}
+          options={{headerShown:false}}
+          ></Stack.Screen>
+
       <Stack.Screen
           name='WarnaOren'
           component={WarnaOren}
