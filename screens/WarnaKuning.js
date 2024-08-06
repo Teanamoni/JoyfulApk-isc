@@ -3,22 +3,23 @@ import { useState } from "react";
 import {Text, View, StyleSheet, ImageBackground, TextInput, Pressable, TouchableOpacity, Alert, Image, ImageComponent} from "react-native";
 import Home from "./Home";
 import WarnaOren from "./WarnaOren";
+import WarnaHijau from "./WarnaHijau";
 
 
 
-export default function NamaWarna() {
+export default function WarnaKuning() {
 
     const navigation=useNavigation()
 
     function KlikBack(){
-        navigation.navigate('Home');
+        navigation.navigate('WarnaOren');
     }
     function KlikNext(){
-        navigation.navigate('WarnaOren',{WarnaOren});
+        navigation.navigate('WarnaHijau',{WarnaHijau});
     }
 
     return(
-        <View style={{ backgroundColor: "#FF6868", flex: 1 }}>
+        <View style={{ backgroundColor: "#FFEC9E", flex: 1 }}>
         <View style={styles.topButtons}>
                 <TouchableOpacity onPress={KlikBack} style={styles.buttton}>
                     <Text>Kembali</Text>
@@ -36,21 +37,21 @@ export default function NamaWarna() {
                     fontSize: 30,
                     textAlign:"center"
                 }}>
-                    Merah
+                    Kuning
                 </Text>
                 <Text style={{
                     fontSize: 50,
                     textAlign: "center",
                     marginTop: 10
                 }}>
-                     أحمر
+                    أصفر
                 </Text>
                 <Text style={{
                     fontSize: 30,
                     textAlign: "center",
                     marginTop: 30
                 }}>
-                    ‘ahmar
+                   'asfar
                 </Text>
             </View>
 
@@ -84,7 +85,7 @@ const styles = StyleSheet.create({
     },
     buttton:{
         padding: 10,
-        backgroundColor:'#D04848',
+        backgroundColor:'#FFFF80',
         borderRadius: 10,
     },
     imageatas: {
@@ -102,8 +103,8 @@ const styles = StyleSheet.create({
     rectangle: {
         width: 350,
         height: 200,
-        backgroundColor: '#D24545',
-        borderColor: '#BB2525',
+        backgroundColor: '#F9E400',
+        borderColor: '#FFC700',
         borderWidth: 3,
         marginLeft: 5,
         borderRadius: 20,
@@ -116,7 +117,7 @@ const styles = StyleSheet.create({
         right: 20,
         padding: 15,
         paddingHorizontal: 40,
-        backgroundColor:'#D04848',
+        backgroundColor:'#FFFF80',
         borderRadius: 10,
     }
 });

@@ -1,24 +1,25 @@
 import { useNavigation } from "@react-navigation/native";
 import { useState } from "react";
 import {Text, View, StyleSheet, ImageBackground, TextInput, Pressable, TouchableOpacity, Alert, Image, ImageComponent} from "react-native";
-import Home from "./Home";
-import WarnaOren from "./WarnaOren";
+import Home from "../Home";
+import Angka3 from "./Angka3";
+import Angka5 from "./Angka5";
 
 
 
-export default function NamaWarna() {
+export default function Angka4() {
 
     const navigation=useNavigation()
 
     function KlikBack(){
-        navigation.navigate('Home');
+        navigation.navigate('Angka3');
     }
     function KlikNext(){
-        navigation.navigate('WarnaOren',{WarnaOren});
+        navigation.navigate('Angka5',{Angka5});
     }
 
     return(
-        <View style={{ backgroundColor: "#FF6868", flex: 1 }}>
+        <View style={{ backgroundColor: "#C7C8CC", flex: 1 }}>
         <View style={styles.topButtons}>
                 <TouchableOpacity onPress={KlikBack} style={styles.buttton}>
                     <Text>Kembali</Text>
@@ -30,31 +31,38 @@ export default function NamaWarna() {
         </View>
         <View styles={styles.container}>
             <Image
-                source={require('../assets/Akhi.png')} style={styles.imageatas} />
+                source={require('../../assets/Akhi.png')} style={styles.imageatas} />
             <View style={styles.rectangle}>
                 <Text style={{
                     fontSize: 30,
                     textAlign:"center"
                 }}>
-                    Merah
+                    Empat
                 </Text>
                 <Text style={{
-                    fontSize: 50,
+                    fontSize: 59,
                     textAlign: "center",
-                    marginTop: 10
+                    marginTop: 2
                 }}>
-                     أحمر
+                    ٤
                 </Text>
                 <Text style={{
-                    fontSize: 30,
+                    fontSize: 28,
                     textAlign: "center",
-                    marginTop: 30
+                    marginTop: 1
                 }}>
-                    ‘ahmar
+                    أَرْبَعَةٌ
+                </Text>
+                <Text style={{
+                    fontSize: 23,
+                    textAlign: "center",
+                    marginTop: 3 
+                }}>
+                    arba'atun
                 </Text>
             </View>
 
-            <Image source={require('../assets/Ukhti.png')} style={styles.imagebawah} />
+            <Image source={require('../../assets/Ukhti.png')} style={styles.imagebawah} />
             <TouchableOpacity onPress={(KLikHome) => navigation.navigate(Home)}
                 style={styles.homeButton}>
                 <Text> Home</Text>
@@ -84,7 +92,7 @@ const styles = StyleSheet.create({
     },
     buttton:{
         padding: 10,
-        backgroundColor:'#D04848',
+        backgroundColor:'#B4B4B8',
         borderRadius: 10,
     },
     imageatas: {
@@ -102,8 +110,8 @@ const styles = StyleSheet.create({
     rectangle: {
         width: 350,
         height: 200,
-        backgroundColor: '#D24545',
-        borderColor: '#BB2525',
+        backgroundColor: '#E2DAD6',
+        borderColor: '#F5EDED',
         borderWidth: 3,
         marginLeft: 5,
         borderRadius: 20,
@@ -116,7 +124,7 @@ const styles = StyleSheet.create({
         right: 20,
         padding: 15,
         paddingHorizontal: 40,
-        backgroundColor:'#D04848',
+        backgroundColor:'#B4B4B8',
         borderRadius: 10,
     }
 });

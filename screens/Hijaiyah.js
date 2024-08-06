@@ -1,8 +1,6 @@
 import { useNavigation } from "@react-navigation/native";
-import { useState } from "react";
 import {Text, View, StyleSheet, ImageBackground, TextInput, Pressable, TouchableOpacity, Alert, Image, Button} from "react-native";
 import Home from "./Home";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HijaiyahBa from "./HijaiyahBa";
 
 

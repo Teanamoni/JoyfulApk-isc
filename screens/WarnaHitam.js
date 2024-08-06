@@ -2,23 +2,22 @@ import { useNavigation } from "@react-navigation/native";
 import { useState } from "react";
 import {Text, View, StyleSheet, ImageBackground, TextInput, Pressable, TouchableOpacity, Alert, Image, ImageComponent} from "react-native";
 import Home from "./Home";
-import WarnaOren from "./WarnaOren";
+import WarnaPutih from "./WarnaPutih";
 
 
-
-export default function NamaWarna() {
+export default function WarnaHitam() {
 
     const navigation=useNavigation()
 
     function KlikBack(){
-        navigation.navigate('Home');
+        navigation.navigate('WarnaBiru');
     }
     function KlikNext(){
-        navigation.navigate('WarnaOren',{WarnaOren});
+        navigation.navigate('WarnaPutih',{WarnaPutih});
     }
 
     return(
-        <View style={{ backgroundColor: "#FF6868", flex: 1 }}>
+        <View style={{ backgroundColor: "#2D2727", flex: 1 }}>
         <View style={styles.topButtons}>
                 <TouchableOpacity onPress={KlikBack} style={styles.buttton}>
                     <Text>Kembali</Text>
@@ -34,23 +33,26 @@ export default function NamaWarna() {
             <View style={styles.rectangle}>
                 <Text style={{
                     fontSize: 30,
-                    textAlign:"center"
+                    textAlign:"center",
+                    color:'white'
                 }}>
-                    Merah
+                    Hitam
                 </Text>
                 <Text style={{
                     fontSize: 50,
                     textAlign: "center",
-                    marginTop: 10
+                    marginTop: 10,
+                    color:'white'
                 }}>
-                     أحمر
+                    أسود
                 </Text>
                 <Text style={{
                     fontSize: 30,
                     textAlign: "center",
-                    marginTop: 30
+                    marginTop: 30,
+                    color:'white'
                 }}>
-                    ‘ahmar
+                   'aswad
                 </Text>
             </View>
 
@@ -84,7 +86,7 @@ const styles = StyleSheet.create({
     },
     buttton:{
         padding: 10,
-        backgroundColor:'#D04848',
+        backgroundColor:'#686D76',
         borderRadius: 10,
     },
     imageatas: {
@@ -102,8 +104,8 @@ const styles = StyleSheet.create({
     rectangle: {
         width: 350,
         height: 200,
-        backgroundColor: '#D24545',
-        borderColor: '#BB2525',
+        backgroundColor: '#03001C',
+        borderColor: '#000000',
         borderWidth: 3,
         marginLeft: 5,
         borderRadius: 20,
@@ -116,7 +118,7 @@ const styles = StyleSheet.create({
         right: 20,
         padding: 15,
         paddingHorizontal: 40,
-        backgroundColor:'#D04848',
+        backgroundColor:'#686D76',
         borderRadius: 10,
     }
 });

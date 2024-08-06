@@ -2,23 +2,22 @@ import { useNavigation } from "@react-navigation/native";
 import { useState } from "react";
 import {Text, View, StyleSheet, ImageBackground, TextInput, Pressable, TouchableOpacity, Alert, Image, ImageComponent} from "react-native";
 import Home from "./Home";
-import WarnaOren from "./WarnaOren";
+import WarnaPutih from "./WarnaPutih";
+import WarnaCoklat from "./WarnaCoklat";
 
-
-
-export default function NamaWarna() {
+export default function WarnaUngu() {
 
     const navigation=useNavigation()
 
     function KlikBack(){
-        navigation.navigate('Home');
+        navigation.navigate('WarnaPutih');
     }
     function KlikNext(){
-        navigation.navigate('WarnaOren',{WarnaOren});
+        navigation.navigate('WarnaCoklat',{WarnaCoklat});
     }
 
     return(
-        <View style={{ backgroundColor: "#FF6868", flex: 1 }}>
+        <View style={{ backgroundColor: "#E2BBE9", flex: 1 }}>
         <View style={styles.topButtons}>
                 <TouchableOpacity onPress={KlikBack} style={styles.buttton}>
                     <Text>Kembali</Text>
@@ -36,21 +35,21 @@ export default function NamaWarna() {
                     fontSize: 30,
                     textAlign:"center"
                 }}>
-                    Merah
+                    Ungu
                 </Text>
                 <Text style={{
                     fontSize: 50,
                     textAlign: "center",
                     marginTop: 10
                 }}>
-                     أحمر
+                    أرجواني
                 </Text>
                 <Text style={{
                     fontSize: 30,
                     textAlign: "center",
                     marginTop: 30
                 }}>
-                    ‘ahmar
+                   'arjuani
                 </Text>
             </View>
 
@@ -84,7 +83,7 @@ const styles = StyleSheet.create({
     },
     buttton:{
         padding: 10,
-        backgroundColor:'#D04848',
+        backgroundColor:'#D875C7',
         borderRadius: 10,
     },
     imageatas: {
@@ -102,8 +101,8 @@ const styles = StyleSheet.create({
     rectangle: {
         width: 350,
         height: 200,
-        backgroundColor: '#D24545',
-        borderColor: '#BB2525',
+        backgroundColor: '#E59BE9',
+        borderColor: '#BC7FCD',
         borderWidth: 3,
         marginLeft: 5,
         borderRadius: 20,
@@ -116,7 +115,7 @@ const styles = StyleSheet.create({
         right: 20,
         padding: 15,
         paddingHorizontal: 40,
-        backgroundColor:'#D04848',
+        backgroundColor:'#D875C7',
         borderRadius: 10,
     }
 });
